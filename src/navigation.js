@@ -3,140 +3,184 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Homes',
+      text: 'Support',
       links: [
         {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
+          text: 'Support GPT',
+          href: getPermalink('/support/gpt'),
         },
         {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
+          text: 'Tickets & Téléassistance',
+          href: getPermalink('/support/tickets'),
         },
         {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
-        },
-        {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
+          text: 'Visio',
+          href: getPermalink('/support/visio'),
         },
       ],
     },
     {
-      text: 'Pages',
+      text: 'IA',
       links: [
         {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
+          text: 'Studio IA',
+          href: getPermalink('/ia/studio'),
         },
         {
-          text: 'Services',
-          href: getPermalink('/services'),
+          text: 'Services IA',
+          href: getPermalink('/ia/services'),
         },
         {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
-        },
-        {
-          text: 'About us',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
-          href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
+          text: 'Agents IA',
+          href: getPermalink('/ia/agents'),
         },
       ],
     },
     {
-      text: 'Landing',
+      text: 'Projets',
       links: [
         {
-          text: 'Lead Generation',
-          href: getPermalink('/landing/lead-generation'),
+          text: 'Analyse Besoins',
+          href: getPermalink('/projets/analyse'),
         },
         {
-          text: 'Long-form Sales',
-          href: getPermalink('/landing/sales'),
-        },
-        {
-          text: 'Click-Through',
-          href: getPermalink('/landing/click-through'),
-        },
-        {
-          text: 'Product Details (or Services)',
-          href: getPermalink('/landing/product'),
-        },
-        {
-          text: 'Coming Soon or Pre-Launch',
-          href: getPermalink('/landing/pre-launch'),
-        },
-        {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
+          text: 'Setup & Suivi',
+          href: getPermalink('/projets/setup'),
         },
       ],
     },
     {
-      text: 'Blog',
+      text: 'Apps',
       links: [
         {
-          text: 'Blog List',
-          href: getBlogPermalink(),
+          text: 'WordPress',
+          href: getPermalink('/apps/wordpress'),
         },
         {
-          text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
+          text: 'Odoo',
+          href: getPermalink('/apps/odoo'),
         },
         {
-          text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
+          text: 'Madis RGPD',
+          href: getPermalink('/apps/madis-rgpd'),
         },
         {
-          text: 'Category Page',
-          href: getPermalink('tutorials', 'category'),
+          text: 'Ghost',
+          href: getPermalink('/apps/ghost'),
         },
         {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
+          text: 'Moodle',
+          href: getPermalink('/apps/moodle'),
+        },
+        {
+          text: 'Nextcloud',
+          href: getPermalink('/apps/nextcloud'),
+        },
+        {
+          text: 'Dolibarr',
+          href: getPermalink('/apps/dolibarr'),
+        },
+        {
+          text: 'Matomo',
+          href: getPermalink('/apps/matomo'),
+        },
+        {
+          text: 'SuiteCRM',
+          href: getPermalink('/apps/suitecrm'),
+        },
+        {
+          text: 'LibreOffice',
+          href: getPermalink('/apps/libreoffice'),
+        },
+        {
+          text: 'Magento',
+          href: getPermalink('/apps/magento'),
+        },
+        {
+          text: 'OpenCart',
+          href: getPermalink('/apps/opencart'),
+        },
+        {
+          text: 'PrestaShop',
+          href: getPermalink('/apps/prestashop'),
+        },
+        {
+          text: 'SugarCRM',
+          href: getPermalink('/apps/sugarcrm'),
+        },
+        {
+          text: 'Zimbra',
+          href: getPermalink('/apps/zimbra'),
+        },
+        {
+          text: 'Redmine',
+          href: getPermalink('/apps/redmine'),
+        },
+        {
+          text: 'Joomla!',
+          href: getPermalink('/apps/joomla'),
+        },
+        {
+          text: 'Drupal',
+          href: getPermalink('/apps/drupal'),
+        },
+        {
+          text: 'OpenERP',
+          href: getPermalink('/apps/openerp'),
+        },
+        {
+          text: 'Liferay',
+          href: getPermalink('/apps/liferay'),
+        },
+        {
+          text: 'Alfresco',
+          href: getPermalink('/apps/alfresco'),
+        },
+        {
+          text: 'Eclipse',
+          href: getPermalink('/apps/eclipse'),
+        },
+        {
+          text: 'GitLab',
+          href: getPermalink('/apps/gitlab'),
+        },
+        {
+          text: 'Apache Kafka',
+          href: getPermalink('/apps/kafka'),
         },
       ],
     },
     {
-      text: 'Widgets',
-      href: '#',
+      text: 'Tarifs',
+      href: getPermalink('/tarifs'),
+    },
+    {
+      text: 'Contact',
+      href: getPermalink('/contact'),
     },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  actions: [{ text: 'Télécharger', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
 };
 
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Produit',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'Fonctionnalités', href: '#' },
+        { text: 'Sécurité', href: '#' },
+        { text: 'Équipe', href: '#' },
+        { text: 'Entreprise', href: '#' },
+        { text: 'Histoires de clients', href: '#' },
+        { text: 'Tarifs', href: '#' },
+        { text: 'Ressources', href: '#' },
       ],
     },
     {
-      title: 'Platform',
+      title: 'Plateforme',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
+        { text: 'API Développeur', href: '#' },
+        { text: 'Partenaires', href: '#' },
         { text: 'Atom', href: '#' },
         { text: 'Electron', href: '#' },
         { text: 'AstroWind Desktop', href: '#' },
@@ -146,28 +190,28 @@ export const footerData = {
       title: 'Support',
       links: [
         { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: 'Forum Communautaire', href: '#' },
+        { text: 'Services Professionnels', href: '#' },
+        { text: 'Compétences', href: '#' },
+        { text: 'Statut', href: '#' },
       ],
     },
     {
-      title: 'Company',
+      title: 'Entreprise',
       links: [
-        { text: 'About', href: '#' },
+        { text: 'À Propos', href: '#' },
         { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
+        { text: 'Carrières', href: '#' },
+        { text: 'Presse', href: '#' },
         { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'Impact Social', href: '#' },
+        { text: 'Boutique', href: '#' },
       ],
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Conditions', href: getPermalink('/terms') },
+    { text: 'Politique de Confidentialité', href: getPermalink('/privacy') },
   ],
   socialLinks: [
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
