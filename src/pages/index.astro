@@ -21,34 +21,33 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-      { text: 'Learn more', href: '#features' },
-    ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
-  >
-    <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 4.0</span> + Tailwind CSS
-    </Fragment>
+<Hero
+  actions={[
+    {
+      variant: 'primary',
+      text: 'Obtenez des services 🚀',
+      href: '/contact',
+      target: '_blank',
+      icon: 'tabler:download',
+    },
+    { text: 'En savoir plus 📖', href: '#features' },
+  ]}
+  image={{ src: '~/assets/images/hero-image.png', alt: 'Cybtek Hero Image' }}
+>
+  <Fragment slot="title">
+    Solutions intégrées pour <span class="hidden xl:inline">votre transformation digitale avec</span>
+    <span class="text-accent dark:text-white highlight"> l'intelligence artificielle</span> 🤖 + Support Technique 💼
+  </Fragment>
 
-    <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
-    </Fragment>
-  </Hero>
+  <Fragment slot="subtitle">
+    <span class="hidden sm:inline">
+      <span class="font-semibold">Cybtek</span> propose des solutions innovantes et personnalisées pour l'IA et le support technique.</span
+    >
+    <span class="block mb-1 sm:hidden font-bold text-blue-600">Cybtek : Prêt pour la production 🚀.</span>
+    Idéal pour les Startups, Petites Entreprises, Sites SaaS, Portfolios Professionnels, Sites Marketing, Pages de Destination et Blogs.
+  </Fragment>
+</Hero>
+
 
   <!-- Note Widget ******************* -->
 
@@ -56,50 +55,50 @@ const metadata = {
 
   <!-- Features Widget *************** -->
 
-  <Features
-    id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
-    items={[
-      {
-        title: 'Astro + Tailwind CSS Integration',
-        description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
-      },
-      {
-        title: 'Ready-to-use Components',
-        description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
-      },
-      {
-        title: 'Best Practices',
-        description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
-      },
-      {
-        title: 'Excellent Page Speed',
-        description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
-      },
-      {
-        title: 'Search Engine Optimization (SEO)',
-        description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
-      },
-      {
-        title: 'Open to new ideas and contributions',
-        description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
-      },
-    ]}
-  />
+<Features
+  id="features"
+  tagline="Caractéristiques"
+  title="Ce que vous obtenez avec Cybtek"
+  subtitle="L'une des solutions les plus professionnelles et complètes actuellement sur le marché. Conçu pour améliorer l'efficacité et la productivité."
+  items={[
+    {
+      title: 'Intégration IA Avancée 🤖',
+      description:
+        'Une intégration fluide des technologies IA pour offrir des performances élevées et une grande polyvalence dans vos projets.',
+      icon: 'tabler:brand-ai',
+    },
+    {
+      title: 'Support Technique de Niveau 3 🛠️',
+      description:
+        'Support technique avancé disponible 24/7 pour résoudre vos problèmes les plus complexes et garantir la continuité de vos opérations.',
+      icon: 'tabler:tools',
+    },
+    {
+      title: 'Déploiement Docker 🚢',
+      description:
+        'Déploiement d\'applications dans des conteneurs Docker pour une gestion simplifiée et une meilleure scalabilité.',
+      icon: 'tabler:brand-docker',
+    },
+    {
+      title: 'Formations Personnalisées 🎓',
+      description:
+        'Formations sur mesure pour maîtriser les technologies IA et les meilleures pratiques en développement et support technique.',
+      icon: 'tabler:school',
+    },
+    {
+      title: 'Solutions Open Source 🌐',
+      description:
+        'Implémentation et support des meilleures solutions open source comme WordPress, Odoo, et bien plus.',
+      icon: 'tabler:brand-open-source',
+    },
+    {
+      title: 'Optimisation pour les Moteurs de Recherche (SEO) 🔍',
+      description:
+        "Amélioration de la visibilité de votre site web pour attirer plus de trafic organique et atteindre une audience plus large.",
+      icon: 'tabler:arrows-right-left',
+    },
+  ]}
+/>
 
   <!-- Content Widget **************** -->
 
