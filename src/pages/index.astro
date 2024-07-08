@@ -1,200 +1,220 @@
 ---
-// Importation des composants utilisés
-import Hero from '../components/Hero.astro';
-import Note from '../components/Note.astro';
-import Features from '../components/Features.astro';
-import Content from '../components/Content.astro';
-import Steps from '../components/Steps.astro';
-import Features2 from '../components/Features2.astro';
-import BlogLatestPosts from '../components/BlogLatestPosts.astro';
-import FAQs from '../components/FAQs.astro';
-import Stats from '../components/Stats.astro';
-import CallToAction from '../components/CallToAction.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Content from '~/components/widgets/Content.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  ignoreTitleTemplate: true,
+};
 ---
 
-<Layout>
-  <!-- Contenu de la page d'accueil -->
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
   <Hero
     actions={[
       {
         variant: 'primary',
-        text: 'Obtenez des services',
-        href: '/contact',
+        text: 'Get template',
+        href: 'https://github.com/onwidget/astrowind',
         target: '_blank',
         icon: 'tabler:download',
       },
-      { text: 'En savoir plus', href: '#features' },
+      { text: 'Learn more', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'Cybtek Hero Image' }}
+    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      Solutions <span class="hidden xl:inline">intégrées pour</span>
-      <span class="text-accent dark:text-white highlight"> l'intelligence artificielle</span> et le support technique
+      Free template for <span class="hidden xl:inline">creating websites with</span>
+      <span class="text-accent dark:text-white highlight"> Astro 4.0</span> + Tailwind CSS
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">Cybtek</span> propose des solutions innovantes et personnalisées pour l'IA et le support technique.</span
+        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
+        + Tailwind CSS.</span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">Cybtek : Prêt pour la production.</span>
-      Idéal pour les Startups, Petites Entreprises, Sites SaaS, Portfolios Professionnels, Sites Marketing, Pages de Destination et Blogs.
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
+      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
+      Blogs.
     </Fragment>
   </Hero>
 
+  <!-- Note Widget ******************* -->
+
   <Note />
+
+  <!-- Features Widget *************** -->
 
   <Features
     id="features"
-    tagline="Caractéristiques"
-    title="Ce que vous obtenez avec Cybtek"
-    subtitle="L'une des solutions les plus professionnelles et complètes actuellement sur le marché. Conçu pour améliorer l'efficacité et la productivité."
+    tagline="Features"
+    title="What you get with AstroWind"
+    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
     items={[
       {
-        title: 'Intégration IA Avancée',
+        title: 'Astro + Tailwind CSS Integration',
         description:
-          'Une intégration fluide entre diverses technologies IA pour offrir une productivité, des performances et une polyvalence élevées.',
-        icon: 'tabler:brand-ai',
+          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
+        icon: 'tabler:brand-tailwind',
       },
       {
-        title: 'Composants Prêts à l’Emploi',
+        title: 'Ready-to-use Components',
         description:
-          'Widgets prêts à l’emploi pour les sites de marketing, SaaS, blogs, profils personnels, petites entreprises...',
+          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
         icon: 'tabler:components',
       },
       {
-        title: 'Meilleures Pratiques',
+        title: 'Best Practices',
         description:
-          'Création de sites web sécurisés, efficaces et conviviaux qui offrent des expériences exceptionnelles et une valeur durable.',
+          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
         icon: 'tabler:list-check',
       },
       {
-        title: 'Excellente Vitesse de Page',
+        title: 'Excellent Page Speed',
         description:
-          'Avoir une bonne vitesse de page impacte le classement dans les recherches organiques, améliore l'expérience utilisateur (UI/UX) et augmente les taux de conversion.',
+          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
         icon: 'tabler:rocket',
       },
       {
-        title: 'Optimisation pour les Moteurs de Recherche (SEO)',
+        title: 'Search Engine Optimization (SEO)',
         description:
-          "L'optimisation SEO permet d'améliorer la visibilité d'un site web, de générer du trafic organique et d'atteindre une audience plus large.",
+          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
         icon: 'tabler:arrows-right-left',
       },
       {
-        title: 'Ouvert aux nouvelles idées et contributions',
+        title: 'Open to new ideas and contributions',
         description:
-          'Favoriser une culture ouverte aux nouvelles idées et contributions est essentiel pour encourager l'innovation, la collaboration et une expérience utilisateur dynamique.',
+          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
         icon: 'tabler:bulb',
       },
     ]}
   />
 
+  <!-- Content Widget **************** -->
+
   <Content
     isReversed
-    tagline="Solutions Cybtek"
-    title="Innovations pour votre transformation digitale"
+    tagline="Inside template"
+    title="AstroWind's Blueprint: Fun Meets Functionality!"
     items={[
       {
-        title: 'Intégration IA avancée',
+        title: 'Built on top of Astro 4.0',
         description:
-          'Bénéficiez des performances et des fonctionnalités conviviales des dernières technologies IA pour transformer votre entreprise.',
+          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
       },
       {
-        title: 'Assistance technique de pointe',
+        title: 'Styled using Tailwind CSS',
         description:
-          'Un support technique rapide et efficace pour garantir la continuité et la performance de vos opérations.',
+          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
       },
       {
-        title: 'Compatibilité multi-navigateurs',
+        title: 'Cross-browser compatibility',
         description:
-          'Assurez-vous que votre site web fonctionne de manière cohérente sur divers navigateurs, offrant une expérience homogène à tous les utilisateurs.',
+          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Image Colorée',
+      alt: 'Colorful Image',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Construisez sur des bases modernes</h3>
-      Gagnez un avantage concurrentiel en intégrant des pratiques industrielles de pointe
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
+      Gain a competitive advantage by incorporating industry leading practices
     </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
+
+  <!-- Content Widget **************** -->
 
   <Content
     isAfterContent
     items={[
       {
-        title: 'Personnalisation élevée',
-        description: `Adaptez facilement les solutions à l'identité et aux besoins de votre marque, rendant votre site distinctif et vous faisant gagner du temps.`,
+        title: 'High level of customization',
+        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
       },
       {
-        title: 'Possibilités de mise en page multiples',
+        title: 'Multiple layout possibilities',
         description:
-          'Explorez diverses options de mise en page pour trouver celle qui présente le mieux votre contenu, améliorant l’engagement et la navigation des utilisateurs.',
+          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
       },
       {
-        title: 'Design entièrement réactif',
+        title: 'Fully responsive design',
         description:
-          "Assurez la performance optimale de votre site sur divers appareils et tailles d'écran, offrant une expérience utilisateur cohérente et agréable.",
+          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
       },
       {
-        title: 'Intégration des médias',
+        title: 'Integration of media',
         description:
-          'Incorporez facilement des images, vidéos et éléments multimédias qui enrichissent votre contenu et engagent efficacement les visiteurs.',
+          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Image Plan',
+      alt: 'Blueprint Image',
     }}
   >
-    <Fragment slot="content">Assurez-vous que votre présence en ligne vous représente véritablement.</Fragment>
+    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
+
+  <!-- Content Widget **************** -->
 
   <Content
     isReversed
     isAfterContent
     items={[
       {
-        title: 'Engagement utilisateur amélioré',
+        title: 'Enhanced user engagement',
         description:
-          'Captivez votre audience avec des éléments interactifs, une navigation intuitive et des mises en page visuellement attrayantes, encourageant des visites plus longues.',
+          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
       },
       {
-        title: 'Amélioration continue',
+        title: 'Continuous improvement',
         description:
-          'Assurez-vous que votre site reste aligné avec les dernières tendances et technologies grâce à des mises à jour et des améliorations régulières.',
+          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
       },
       {
-        title: 'Efficacité en temps et ressources',
+        title: 'Time and resource efficiency',
         description:
-          'Évitez le processus chronophage de création de site web de zéro et lancez votre présence en ligne plus rapidement avec les solutions de Cybtek.',
+          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
       },
       {
-        title: 'Soutien communautaire',
-        description: `Rejoignez la communauté croissante de Cybtek pour des insights, des ressources et de l’assistance, assurant que vous n’êtes jamais seul dans votre parcours de développement web.`,
+        title: 'Community support',
+        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Image Astronautes',
+      alt: 'Astronauts Image',
     }}
   >
-    <Fragment slot="content">Conçu pour favoriser la croissance et le succès.</Fragment>
+    <Fragment slot="content">Designed to foster growth and success.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
+
+  <!-- Steps Widget ****************** -->
 
   <Steps
     title="Lancez votre projet digital avec Cybtek en un rien de temps."
@@ -228,59 +248,61 @@ import Layout from '../layouts/Layout.astro';
     }}
   />
 
+  <!-- Features2 Widget ************** -->
+
   <Features2
-    title="Widgets les plus utilisés"
-    subtitle="Fournit des composants fréquemment utilisés pour la création de sites web avec Tailwind CSS"
-    tagline="Composants"
+    title="Most used widgets"
+    subtitle="Provides frequently used components for building websites using Tailwind CSS"
+    tagline="Components"
     items={[
       {
-        title: 'En-têtes',
-        description: "Vous avez déjà essayé de conduire sans GPS ? Boom ! C'est pourquoi les sites web ont besoin d'en-têtes pour la direction.",
+        title: 'Headers',
+        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
         icon: 'flat-color-icons:template',
       },
       {
-        title: 'Héros',
+        title: 'Heros',
         description:
-          "Imaginez un super-héros qui atterrit – épique, n'est-ce pas ? C'est le travail d'une section Héros, faire des entrées grandioses!",
+          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
         icon: 'flat-color-icons:gallery',
       },
       {
-        title: 'Caractéristiques',
+        title: 'Features',
         description:
-          'Là où les sites web exhibent leurs atouts et montrent leurs super pouvoirs. Pas de retenue ici!',
+          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
         icon: 'flat-color-icons:approval',
       },
       {
-        title: 'Contenu',
+        title: 'Content',
         description:
-          "Plongez dans le cœur d'un site ; sans lui, vous ne feriez que du lèche-vitrine. Le contenu est roi.",
+          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
         icon: 'flat-color-icons:document',
       },
       {
-        title: 'Appel à l’action',
+        title: 'Call-to-Action',
         description:
-          'Ce bouton enthousiaste qui vous pousse toujours à "Agissez maintenant !". Ouais, c'est ce bouton qui vous incite à l’aventure.',
+          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
         icon: 'flat-color-icons:advertising',
       },
       {
-        title: 'Tarification',
-        description: "Voici le menu dessert du monde des sites web. Des choix tentants vous attendent, pouvez-vous y résister?",
+        title: 'Pricing',
+        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
         icon: 'flat-color-icons:currency-exchange',
       },
       {
-        title: 'Témoignages',
-        description: 'Entrez dans le coin des potins ! Ici, d'autres visiteurs partagent les détails juteux.',
+        title: 'Testimonial',
+        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
         icon: 'flat-color-icons:voice-presentation',
       },
       {
         title: 'Contact',
         description:
-          'Comme une boîte aux lettres numérique, mais plus rapide ! Envoyez un message, posez une question ou envoyez un high-five virtuel.',
+          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
         icon: 'flat-color-icons:business-contact',
       },
       {
-        title: 'Pieds de page',
-        description: "Le pied de page est comme les crédits d'un film mais avec des easter eggs. À vous de les découvrir!",
+        title: 'Footers',
+        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
         icon: 'flat-color-icons:database',
       },
     ]}
@@ -290,6 +312,8 @@ import Layout from '../layouts/Layout.astro';
     </Fragment>
   </Features2>
 
+  <!-- HighlightedPosts Widget ******* -->
+
   <BlogLatestPosts
     title="Découvrez plus de contenu sur notre Blog"
     information={`Le blog est utilisé pour afficher la documentation de Cybtek.
@@ -297,6 +321,8 @@ import Layout from '../layouts/Layout.astro';
                         L'IA est une technologie très intéressante. Merci.
                 `}
   />
+
+  <!-- FAQs Widget ******************* -->
 
   <FAQs
     title="Questions Fréquemment Posées"
@@ -337,6 +363,8 @@ import Layout from '../layouts/Layout.astro';
     ]}
   />
 
+  <!-- Stats Widget ****************** -->
+
   <Stats
     stats={[
       { title: 'Clients Satisfaits', amount: '132' },
@@ -345,6 +373,7 @@ import Layout from '../layouts/Layout.astro';
       { title: 'Heures de Support', amount: '484' },
     ]}
   />
+
 
   <CallToAction
     actions={[
