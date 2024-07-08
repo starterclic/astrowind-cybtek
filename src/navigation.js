@@ -6,15 +6,15 @@ export const headerData = {
       text: 'Support',
       links: [
         {
-          text: 'Support GPT',
+          text: '🛠️ Support GPT',
           href: getPermalink('/support/gpt'),
         },
         {
-          text: 'Tickets & Téléassistance',
+          text: '📞 Tickets & Téléassistance',
           href: getPermalink('/support/tickets'),
         },
         {
-          text: 'Visio',
+          text: '💻 Visio',
           href: getPermalink('/support/visio'),
         },
       ],
@@ -23,16 +23,24 @@ export const headerData = {
       text: 'IA',
       links: [
         {
-          text: 'Studio IA',
+          text: '🏢 Studio IA',
           href: getPermalink('/ia/studio'),
         },
         {
-          text: 'Services IA',
+          text: '💡 Services IA',
           href: getPermalink('/ia/services'),
         },
         {
-          text: 'Agents IA',
+          text: '🤖 Agents IA',
           href: getPermalink('/ia/agents'),
+        },
+        {
+          text: '🔄 Flowise',
+          href: getPermalink('/ia/flowise'),
+        },
+        {
+          text: '🚀 Clone GPT Augmenté',
+          href: getPermalink('/ia/clone-gpt-augmente'),
         },
       ],
     },
@@ -40,11 +48,11 @@ export const headerData = {
       text: 'Projets',
       links: [
         {
-          text: 'Analyse Besoins',
+          text: '🔍 Analyse Besoins',
           href: getPermalink('/projets/analyse'),
         },
         {
-          text: 'Setup & Suivi',
+          text: '🛠️ Setup & Suivi',
           href: getPermalink('/projets/setup'),
         },
       ],
@@ -53,100 +61,28 @@ export const headerData = {
       text: 'Apps',
       links: [
         {
-          text: 'WordPress',
+          text: '🌐 WordPress',
           href: getPermalink('/apps/wordpress'),
         },
         {
-          text: 'Odoo',
+          text: '📊 Odoo',
           href: getPermalink('/apps/odoo'),
         },
         {
-          text: 'Madis RGPD',
-          href: getPermalink('/apps/madis-rgpd'),
-        },
-        {
-          text: 'Ghost',
+          text: '👻 Ghost',
           href: getPermalink('/apps/ghost'),
         },
         {
-          text: 'Moodle',
-          href: getPermalink('/apps/moodle'),
+          text: '⚙️ Strapi',
+          href: getPermalink('/apps/strapi'),
         },
         {
-          text: 'Nextcloud',
-          href: getPermalink('/apps/nextcloud'),
+          text: '✨ Astro',
+          href: getPermalink('/apps/astro'),
         },
         {
-          text: 'Dolibarr',
-          href: getPermalink('/apps/dolibarr'),
-        },
-        {
-          text: 'Matomo',
-          href: getPermalink('/apps/matomo'),
-        },
-        {
-          text: 'SuiteCRM',
-          href: getPermalink('/apps/suitecrm'),
-        },
-        {
-          text: 'LibreOffice',
-          href: getPermalink('/apps/libreoffice'),
-        },
-        {
-          text: 'Magento',
-          href: getPermalink('/apps/magento'),
-        },
-        {
-          text: 'OpenCart',
-          href: getPermalink('/apps/opencart'),
-        },
-        {
-          text: 'PrestaShop',
-          href: getPermalink('/apps/prestashop'),
-        },
-        {
-          text: 'SugarCRM',
-          href: getPermalink('/apps/sugarcrm'),
-        },
-        {
-          text: 'Zimbra',
-          href: getPermalink('/apps/zimbra'),
-        },
-        {
-          text: 'Redmine',
-          href: getPermalink('/apps/redmine'),
-        },
-        {
-          text: 'Joomla!',
-          href: getPermalink('/apps/joomla'),
-        },
-        {
-          text: 'Drupal',
-          href: getPermalink('/apps/drupal'),
-        },
-        {
-          text: 'OpenERP',
-          href: getPermalink('/apps/openerp'),
-        },
-        {
-          text: 'Liferay',
-          href: getPermalink('/apps/liferay'),
-        },
-        {
-          text: 'Alfresco',
-          href: getPermalink('/apps/alfresco'),
-        },
-        {
-          text: 'Eclipse',
-          href: getPermalink('/apps/eclipse'),
-        },
-        {
-          text: 'GitLab',
-          href: getPermalink('/apps/gitlab'),
-        },
-        {
-          text: 'Apache Kafka',
-          href: getPermalink('/apps/kafka'),
+          text: '🔐 Madis RGPD',
+          href: getPermalink('/apps/madis-rgpd'),
         },
       ],
     },
