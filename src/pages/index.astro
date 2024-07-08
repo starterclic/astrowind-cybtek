@@ -25,26 +25,28 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Obtenez des services',
-        href: '/contact',
+        text: 'Get template',
+        href: 'https://github.com/onwidget/astrowind',
         target: '_blank',
         icon: 'tabler:download',
       },
-      { text: 'En savoir plus', href: '#features' },
+      { text: 'Learn more', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'Cybtek Hero Image' }}
+    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      Solutions <span class="hidden xl:inline">intégrées pour</span>
-      <span class="text-accent dark:text-white highlight"> l'intelligence artificielle</span> et le support technique
+      Free template for <span class="hidden xl:inline">creating websites with</span>
+      <span class="text-accent dark:text-white highlight"> Astro 4.0</span> + Tailwind CSS
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">Cybtek</span> propose des solutions innovantes et personnalisées pour l'IA et le support technique.</span
+        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
+        + Tailwind CSS.</span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">Cybtek : Prêt pour la production.</span>
-      Idéal pour les Startups, Petites Entreprises, Sites SaaS, Portfolios Professionnels, Sites Marketing, Pages de Destination et Blogs.
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
+      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
+      Blogs.
     </Fragment>
   </Hero>
 
@@ -54,82 +56,82 @@ const metadata = {
 
   <!-- Features Widget *************** -->
 
-<Features
-  id="features"
-  tagline="Caractéristiques"
-  title="Ce que vous obtenez avec Cybtek"
-  subtitle="L'une des solutions les plus professionnelles et complètes actuellement sur le marché. Conçu pour améliorer l'efficacité et la productivité."
-  items={[
-    {
-      title: 'Intégration IA Avancée',
-      description:
-        'Une intégration fluide entre diverses technologies IA pour offrir une productivité, des performances et une polyvalence élevées.',
-      icon: 'tabler:brand-ai',
-    },
-    {
-      title: 'Composants Prêts à l’Emploi',
-      description:
-        'Widgets prêts à l’emploi pour les sites de marketing, SaaS, blogs, profils personnels, petites entreprises...',
-      icon: 'tabler:components',
-    },
-    {
-      title: 'Meilleures Pratiques',
-      description:
-        'Création de sites web sécurisés, efficaces et conviviaux qui offrent des expériences exceptionnelles et une valeur durable.',
-      icon: 'tabler:list-check',
-    },
-    {
-      title: 'Excellente Vitesse de Page',
-      description:
-        'Avoir une bonne vitesse de page impacte le classement dans les recherches organiques, améliore l'expérience utilisateur (UI/UX) et augmente les taux de conversion.',
-      icon: 'tabler:rocket',
-    },
-    {
-      title: 'Optimisation pour les Moteurs de Recherche (SEO)',
-      description:
-        "L'optimisation SEO permet d'améliorer la visibilité d'un site web, de générer du trafic organique et d'atteindre une audience plus large.",
-      icon: 'tabler:arrows-right-left',
-    },
-    {
-      title: 'Ouvert aux nouvelles idées et contributions',
-      description:
-        'Favoriser une culture ouverte aux nouvelles idées et contributions est essentiel pour encourager l'innovation, la collaboration et une expérience utilisateur dynamique.',
-      icon: 'tabler:bulb',
-    },
-  ]}
-/>
+  <Features
+    id="features"
+    tagline="Features"
+    title="What you get with AstroWind"
+    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    items={[
+      {
+        title: 'Astro + Tailwind CSS Integration',
+        description:
+          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
+        icon: 'tabler:brand-tailwind',
+      },
+      {
+        title: 'Ready-to-use Components',
+        description:
+          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+        icon: 'tabler:components',
+      },
+      {
+        title: 'Best Practices',
+        description:
+          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
+        icon: 'tabler:list-check',
+      },
+      {
+        title: 'Excellent Page Speed',
+        description:
+          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Search Engine Optimization (SEO)',
+        description:
+          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
+        icon: 'tabler:arrows-right-left',
+      },
+      {
+        title: 'Open to new ideas and contributions',
+        description:
+          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
+        icon: 'tabler:bulb',
+      },
+    ]}
+  />
 
   <!-- Content Widget **************** -->
 
   <Content
     isReversed
-    tagline="Solutions Cybtek"
-    title="Innovations pour votre transformation digitale"
+    tagline="Inside template"
+    title="AstroWind's Blueprint: Fun Meets Functionality!"
     items={[
       {
-        title: 'Intégration IA avancée',
+        title: 'Built on top of Astro 4.0',
         description:
-          'Bénéficiez des performances et des fonctionnalités conviviales des dernières technologies IA pour transformer votre entreprise.',
+          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
       },
       {
-        title: 'Assistance technique de pointe',
+        title: 'Styled using Tailwind CSS',
         description:
-          'Un support technique rapide et efficace pour garantir la continuité et la performance de vos opérations.',
+          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
       },
       {
-        title: 'Compatibilité multi-navigateurs',
+        title: 'Cross-browser compatibility',
         description:
-          'Assurez-vous que votre site web fonctionne de manière cohérente sur divers navigateurs, offrant une expérience homogène à tous les utilisateurs.',
+          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Image Colorée',
+      alt: 'Colorful Image',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Construisez sur des bases modernes</h3>
-      Gagnez un avantage concurrentiel en intégrant des pratiques industrielles de pointe
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
+      Gain a competitive advantage by incorporating industry leading practices
     </Fragment>
 
     <Fragment slot="bg">
@@ -137,38 +139,37 @@ const metadata = {
     </Fragment>
   </Content>
 
-
   <!-- Content Widget **************** -->
 
   <Content
     isAfterContent
     items={[
       {
-        title: 'Personnalisation élevée',
-        description: `Adaptez facilement les solutions à l'identité et aux besoins de votre marque, rendant votre site distinctif et vous faisant gagner du temps.`,
+        title: 'High level of customization',
+        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
       },
       {
-        title: 'Possibilités de mise en page multiples',
+        title: 'Multiple layout possibilities',
         description:
-          'Explorez diverses options de mise en page pour trouver celle qui présente le mieux votre contenu, améliorant l’engagement et la navigation des utilisateurs.',
+          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
       },
       {
-        title: 'Design entièrement réactif',
+        title: 'Fully responsive design',
         description:
-          "Assurez la performance optimale de votre site sur divers appareils et tailles d'écran, offrant une expérience utilisateur cohérente et agréable.",
+          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
       },
       {
-        title: 'Intégration des médias',
+        title: 'Integration of media',
         description:
-          'Incorporez facilement des images, vidéos et éléments multimédias qui enrichissent votre contenu et engagent efficacement les visiteurs.',
+          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Image Plan',
+      alt: 'Blueprint Image',
     }}
   >
-    <Fragment slot="content">Assurez-vous que votre présence en ligne vous représente véritablement.</Fragment>
+    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -182,128 +183,126 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Engagement utilisateur amélioré',
+        title: 'Enhanced user engagement',
         description:
-          'Captivez votre audience avec des éléments interactifs, une navigation intuitive et des mises en page visuellement attrayantes, encourageant des visites plus longues.',
+          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
       },
       {
-        title: 'Amélioration continue',
+        title: 'Continuous improvement',
         description:
-          'Assurez-vous que votre site reste aligné avec les dernières tendances et technologies grâce à des mises à jour et des améliorations régulières.',
+          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
       },
       {
-        title: 'Efficacité en temps et ressources',
+        title: 'Time and resource efficiency',
         description:
-          'Évitez le processus chronophage de création de site web de zéro et lancez votre présence en ligne plus rapidement avec les solutions de Cybtek.',
+          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
       },
       {
-        title: 'Soutien communautaire',
-        description: `Rejoignez la communauté croissante de Cybtek pour des insights, des ressources et de l’assistance, assurant que vous n’êtes jamais seul dans votre parcours de développement web.`,
+        title: 'Community support',
+        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Image Astronautes',
+      alt: 'Astronauts Image',
     }}
   >
-    <Fragment slot="content">Conçu pour favoriser la croissance et le succès.</Fragment>
+    <Fragment slot="content">Designed to foster growth and success.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
-
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Lancez votre projet digital avec Cybtek en un rien de temps."
+    title="Get your dream website up and running in no time with AstroWind."
     items={[
       {
-        title: 'Étape 1: <span class="font-medium">Analyse des Besoins</span>',
+        title: 'Step 1: <span class="font-medium">Download</span>',
         description:
-          "Commencez par une consultation gratuite pour comprendre vos besoins et objectifs. Nous vous aidons à définir une stratégie claire pour votre projet.",
+          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
         icon: 'tabler:package',
       },
       {
-        title: 'Étape 2: <span class="font-medium">Ajout de Contenu</span>',
+        title: 'Step 2: <span class="font-medium">Add content</span>',
         description:
-          "Ajoutez votre contenu, y compris des images, des textes et plus encore pour donner vie à votre espace digital. Le contenu est essentiel pour raconter votre histoire.",
+          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
         icon: 'tabler:letter-case',
       },
       {
-        title: 'Étape 3: <span class="font-medium">Personnalisation des Styles</span>',
+        title: 'Step 3: <span class="font-medium">Customize styles</span>',
         description:
-          'Apportez votre touche personnelle. Adaptez les couleurs, les polices et les mises en page jusqu’à ce que tout soit parfait. Votre style unique amplifié par Cybtek !',
+          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
         icon: 'tabler:paint',
       },
       {
-        title: 'Prêt!',
+        title: 'Ready!',
         icon: 'tabler:check',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Image Étapes',
+      alt: 'Steps image',
     }}
   />
-
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Widgets les plus utilisés"
-    subtitle="Fournit des composants fréquemment utilisés pour la création de sites web avec Tailwind CSS"
-    tagline="Composants"
+    title="Most used widgets"
+    subtitle="Provides frequently used components for building websites using Tailwind CSS"
+    tagline="Components"
     items={[
       {
-        title: 'En-têtes',
-        description: "Vous avez déjà essayé de conduire sans GPS ? Boom ! C'est pourquoi les sites web ont besoin d'en-têtes pour la direction.",
+        title: 'Headers',
+        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
         icon: 'flat-color-icons:template',
       },
       {
-        title: 'Héros',
+        title: 'Heros',
         description:
-          "Imaginez un super-héros qui atterrit – épique, n'est-ce pas ? C'est le travail d'une section Héros, faire des entrées grandioses!",
+          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
         icon: 'flat-color-icons:gallery',
       },
       {
-        title: 'Caractéristiques',
+        title: 'Features',
         description:
-          'Là où les sites web exhibent leurs atouts et montrent leurs super pouvoirs. Pas de retenue ici!',
+          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
         icon: 'flat-color-icons:approval',
       },
       {
-        title: 'Contenu',
+        title: 'Content',
         description:
-          "Plongez dans le cœur d'un site ; sans lui, vous ne feriez que du lèche-vitrine. Le contenu est roi.",
+          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
         icon: 'flat-color-icons:document',
       },
       {
-        title: 'Appel à l’action',
+        title: 'Call-to-Action',
         description:
-          'Ce bouton enthousiaste qui vous pousse toujours à "Agissez maintenant !". Ouais, c'est ce bouton qui vous incite à l’aventure.',
+          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
         icon: 'flat-color-icons:advertising',
       },
       {
-        title: 'Tarification',
-        description: "Voici le menu dessert du monde des sites web. Des choix tentants vous attendent, pouvez-vous y résister?",
+        title: 'Pricing',
+        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
         icon: 'flat-color-icons:currency-exchange',
       },
       {
-        title: 'Témoignages',
-        description: 'Entrez dans le coin des potins ! Ici, d'autres visiteurs partagent les détails juteux.',
+        title: 'Testimonial',
+        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
         icon: 'flat-color-icons:voice-presentation',
       },
       {
         title: 'Contact',
         description:
-          'Comme une boîte aux lettres numérique, mais plus rapide ! Envoyez un message, posez une question ou envoyez un high-five virtuel.',
+          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
         icon: 'flat-color-icons:business-contact',
       },
       {
-        title: 'Pieds de page',
-        description: "Le pied de page est comme les crédits d'un film mais avec des easter eggs. À vous de les découvrir!",
+        title: 'Footers',
+        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
         icon: 'flat-color-icons:database',
       },
     ]}
@@ -313,91 +312,89 @@ const metadata = {
     </Fragment>
   </Features2>
 
-
- <!-- HighlightedPosts Widget ******* -->
+  <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
-    title="Découvrez plus de contenu sur notre Blog"
-    information={`Le blog est utilisé pour afficher la documentation de Cybtek.
-                        Chaque nouvel article sera une étape importante que vous devrez connaître pour devenir un expert en intelligence artificielle et support technique.
-                        L'IA est une technologie très intéressante. Merci.
+    title="Find out more content in our Blog"
+    information={`The blog is used to display AstroWind documentation.
+                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
+                        Astro is a very interesting technology. Thanks.
                 `}
   />
-
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title="Questions Fréquemment Posées"
-    subtitle="Plongez dans les questions suivantes pour découvrir les fonctionnalités puissantes que Cybtek offre et comment elles peuvent améliorer votre parcours de développement web."
+    title="Frequently Asked Questions"
+    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Pourquoi choisir Cybtek ?',
+        title: 'Why AstroWind?',
         description:
-          "Cybtek offre des solutions avancées en intelligence artificielle et support technique, adaptées aux besoins des entreprises modernes. Nous nous engageons à fournir des services de haute qualité pour améliorer votre productivité et efficacité.",
+          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
       },
       {
-        title: 'De quoi ai-je besoin pour commencer ?',
+        title: 'What do I need to start?',
         description:
-          'Tout ce dont vous avez besoin est une idée claire de vos besoins et objectifs. Notre équipe vous guidera à travers chaque étape pour vous assurer une mise en place fluide et réussie de nos solutions.',
+          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
       },
       {
-        title: 'Comment installer les solutions Cybtek ?',
+        title: 'How to install the Astro + Tailwind CSS template?',
         description:
-          "L'installation de nos solutions est simple et rapide. Nous fournissons des guides détaillés et notre équipe est disponible pour vous assister tout au long du processus d'installation.",
+          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
       },
       {
-        title: "Quelles sont les options de support disponibles ?",
+        title: "What's something that you don't understand?",
         description:
-          "Nous offrons plusieurs options de support, y compris l'assistance via GPT, les tickets de support technique, et les sessions de visioconférence pour répondre à tous vos besoins.",
+          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
       },
       {
-        title: 'Quels sont les avantages des solutions Cybtek ?',
+        title: 'What is something that you would like to try again?',
         description:
-          "Nos solutions offrent une intégration avancée de l'IA, une personnalisation élevée, et une assistance technique de pointe pour assurer que votre entreprise reste à la pointe de la technologie.",
+          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
       },
       {
-        title: 'Comment puis-je contribuer à Cybtek ?',
+        title: 'If you could only ask one question to each person you meet, what would that question be?',
         description:
-          "Nous encourageons les contributions de la communauté. Rejoignez-nous pour partager vos idées et aider à améliorer nos solutions. Ensemble, nous pouvons faire avancer la technologie.",
+          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
       },
     ]}
   />
-
 
   <!-- Stats Widget ****************** -->
 
   <Stats
     stats={[
-      { title: 'Clients Satisfaits', amount: '132' },
-      { title: 'Projets Réussis', amount: '248' },
-      { title: 'Applications Déployées', amount: '103' },
-      { title: 'Heures de Support', amount: '484' },
+      { title: 'Downloads', amount: '132K' },
+      { title: 'Stars', amount: '24.8K' },
+      { title: 'Forks', amount: '10.3K' },
+      { title: 'Users', amount: '48.4K' },
     ]}
   />
 
+  <!-- CallToAction Widget *********** -->
 
   <!-- CallToAction Widget *********** -->
 
-<CallToAction
-  actions={[
-    {
-      variant: 'primary',
-      text: 'Contactez-nous',
-      href: '/contact',
-      target: '_self',
-      icon: 'tabler:download',
-    },
-  ]}
->
-  <Fragment slot="title">
-    Cybtek&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">IA et Support Technique</span>
-  </Fragment>
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Contactez-nous',
+        href: '/contact',
+        target: '_self',
+        icon: 'tabler:download',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Cybtek&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">IA et Support Technique</span>
+    </Fragment>
 
-  <Fragment slot="subtitle">
-    Soyez très surpris par les nombreux avantages que nous offrons. <br class="hidden md:inline" />Ne perdez plus de temps ! :P
-  </Fragment>
-</CallToAction>
-
+    <Fragment slot="subtitle">
+      Soyez très surpris par les nombreux avantages que nous offrons. <br class="hidden md:inline" />Ne perdez plus de temps ! :P
+    </Fragment>
+  </CallToAction>
+</Layout>
