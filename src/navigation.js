@@ -3,7 +3,7 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: '🏢 Studio IA',
+      text: '🏭 Studio IA',
       href: getPermalink('/ia/studio'),
     },
     {
