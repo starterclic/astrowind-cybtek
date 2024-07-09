@@ -7,8 +7,8 @@ export const headerData = {
       href: getPermalink('/ia/studio'),
     },
     {
-      text: '📊 Projets',
-      href: getPermalink('/projets/analyse'),
+  text: '🗂️ Projets',
+  href: getPermalink('/projets/projets'),
     },
     {
       text: '🤖 Assistants virtuels',
@@ -31,7 +31,7 @@ export const headerData = {
       href: getPermalink('/contact'),
     },
   ],
-  actions: [{ text: '🪄 Discuter avec Cybot!', href: 'https://cybtek.fr/support', target: '_blank' }],
+  actions: [{ text: '🪄 Discuter avec Cybot, propulsé par GPT!', href: 'https://cybtek.fr/support', target: '_blank' }],
 };
 
 export const footerData = {
