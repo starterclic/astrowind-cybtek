@@ -10,7 +10,7 @@ export const headerData = {
       text: 'Studio IA',
       links: [
         {
-          text: '🏢 Studio',
+          text: '🏢 Applications',
           href: getPermalink('/ia/studio'),
         },
         {
