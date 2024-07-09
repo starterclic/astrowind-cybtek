@@ -15,32 +15,12 @@ export const headerData = {
       href: getPermalink('/projets/analyse'),
     },
     {
-      text: '🤖 Agents',
+      text: '🤖 Agents IA experts',
       href: getPermalink('/ia/agents'),
     },
     {
-      text: '💡 Services IA',
+      text: '💡 Services',
       href: getPermalink('/ia/services'),
-    },
-    {
-      text: '🌐 Expert-WordPress',
-      href: getPermalink('/apps/wordpress'),
-    },
-    {
-      text: '📊 Expert-Odoo',
-      href: getPermalink('/apps/odoo'),
-    },
-    {
-      text: '⚙️ Expert-Strapi',
-      href: getPermalink('/apps/strapi'),
-    },
-    {
-      text: '✨ Expert-Astro',
-      href: getPermalink('/apps/astro'),
-    },
-    {
-      text: '🔐 Expert-RGPD',
-      href: getPermalink('/apps/madis-rgpd'),
     },
     {
       text: '💵 Tarifs',
@@ -51,7 +31,7 @@ export const headerData = {
       href: getPermalink('/contact'),
     },
   ],
-  actions: [{ text: '📥 Télécharger', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  actions: [{ text: '🪄 Discuter avec support IA', href: 'https://cybtek.fr/support', target: '_blank' }],
 };
 
 export const footerData = {
