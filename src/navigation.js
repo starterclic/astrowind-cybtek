@@ -3,11 +3,11 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: '🔔 Support',
+      text: '📚 Support 🪄',
       href: getPermalink('/support/gpt'),
     },
     {
-      text: 'Studio IA + 🔔',
+      text: 'Studio IA',
       links: [
         {
           text: '🏢 Studio',
