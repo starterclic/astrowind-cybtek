@@ -3,27 +3,15 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Support',
-      links: [
-        {
-          text: '🛠️ Support GPT',
-          href: getPermalink('/support/gpt'),
-        },
-        {
-          text: '📞 Tickets & Téléassistance',
-          href: getPermalink('/support/tickets'),
-        },
-        {
-          text: '💻 Visio',
-          href: getPermalink('/support/visio'),
-        },
+      text: '🔔 Support',
+      href: getPermalink('/support/gpt'),
       ],
     },
     {
-      text: 'IA',
+      text: 'Studio IA + 🔔',
       links: [
         {
-          text: '🏢 Studio IA',
+          text: '🏢 Studio',
           href: getPermalink('/ia/studio'),
         },
         {
@@ -34,25 +22,17 @@ export const headerData = {
           text: '🤖 Agents IA',
           href: getPermalink('/ia/agents'),
         },
-        {
-          text: '🔄 Flowise',
-          href: getPermalink('/ia/flowise'),
-        },
-        {
-          text: '🚀 Clone GPT Augmenté',
-          href: getPermalink('/ia/clone-gpt-augmente'),
-        },
       ],
     },
     {
       text: 'Projets',
       links: [
         {
-          text: '🔍 Analyse Besoins',
+          text: '🔍 Cahier des charges',
           href: getPermalink('/projets/analyse'),
         },
         {
-          text: '🛠️ Setup & Suivi',
+          text: '🛠️ Installation & accompagnement',
           href: getPermalink('/projets/setup'),
         },
       ],
@@ -67,10 +47,6 @@ export const headerData = {
         {
           text: '📊 Odoo',
           href: getPermalink('/apps/odoo'),
-        },
-        {
-          text: '👻 Ghost',
-          href: getPermalink('/apps/ghost'),
         },
         {
           text: '⚙️ Strapi',
