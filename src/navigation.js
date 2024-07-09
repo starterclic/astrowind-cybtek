@@ -3,10 +3,6 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: '📚 Support 🪄',
-      href: getPermalink('/support/gpt'),
-    },
-    {
       text: '🏢 Studio IA',
       href: getPermalink('/ia/studio'),
     },
@@ -15,12 +11,16 @@ export const headerData = {
       href: getPermalink('/projets/analyse'),
     },
     {
-      text: '🤖 Agents IA experts',
+      text: '🤖 Assistants virtuels',
       href: getPermalink('/ia/agents'),
     },
     {
       text: '💡 Services',
       href: getPermalink('/ia/services'),
+    },
+    {
+      text: '📚 Support 🪄',
+      href: getPermalink('/support/gpt'),
     },
     {
       text: '💵 Tarifs',
