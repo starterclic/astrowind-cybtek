@@ -37,26 +37,26 @@ export const headerData = {
       ],
     },
     {
-      text: 'Apps',
+      text: 'Agents',
       links: [
         {
-          text: '🌐 WordPress',
+          text: '🌐 Expert-WordPress ne,
           href: getPermalink('/apps/wordpress'),
         },
         {
-          text: '📊 Odoo',
+          text: '📊 Expert-Odoo',
           href: getPermalink('/apps/odoo'),
         },
         {
-          text: '⚙️ Strapi',
+          text: '⚙️ Expert-Strapi',
           href: getPermalink('/apps/strapi'),
         },
         {
-          text: '✨ Astro',
+          text: '✨ Expert-Astro',
           href: getPermalink('/apps/astro'),
         },
         {
-          text: '🔐 Madis RGPD',
+          text: '🔐 Expert-RGPD',
           href: getPermalink('/apps/madis-rgpd'),
         },
       ],
