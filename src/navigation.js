@@ -4,19 +4,19 @@ export const headerData = {
   links: [
       
     {
-      text: '🤖 Assistants',
+      text: 'Assistants',
       href: getPermalink('/ia/agents'),
     },
     {
-      text: '💡 Services',
+      text: 'Services',
       href: getPermalink('/ia/services'),
     },
     {
-      text: '🪄 Support ',
+      text: 'Support ',
       href: getPermalink('/support/gpt'),
     },
     {
-      text: '💵 Tarifs',
+      text: 'Tarifs',
       href: getPermalink('/tarifs'),
     },
     
