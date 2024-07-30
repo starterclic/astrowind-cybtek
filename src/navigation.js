@@ -33,7 +33,7 @@ export const footerData = {
         { text: '🔒 Sécurité', href: '#' },
         { text: '👥 Équipe', href: '#' },
         { text: '🏢 Entreprise', href: '#' },
-        { text: '📝 Histoires de clients', href: '#' },
+        { text: '📝 Projets IA', href: '#' },
         { text: '💵 Tarifs', href: '#' },
         { text: '📚 Ressources', href: '#' },
       ],
@@ -41,7 +41,6 @@ export const footerData = {
     {
       title: '🖥️ Plateforme',
       links: [
-        { text: '🔌 API Développeur', href: '#' },
         { text: '🤝 Partenaires', href: '#' },
         { text: '🚀 StartIA', href: '#' },
         { text: '🧠 GPT', href: '#' },
@@ -52,7 +51,6 @@ export const footerData = {
       title: '💼 Support',
       links: [
         { text: '📄 Docs', href: '#' },
-        { text: '🌐 Forum Communautaire', href: '#' },
         { text: '🛠️ Services Professionnels', href: '#' },
         { text: '🎓 Compétences', href: '#' },
         { text: '📈 Statut', href: '#' },
@@ -63,10 +61,6 @@ export const footerData = {
       links: [
         { text: 'ℹ️ À Propos', href: '#' },
         { text: '✍️ Blog', href: '#' },
-        { text: '🔍 Carrières', href: '#' },
-        { text: '📰 Presse', href: '#' },
-        { text: '🤝 Inclusion', href: '#' },
-        { text: '🌍 Impact Social', href: '#' },
         { text: '🛒 Boutique', href: '#' },
       ],
     },
