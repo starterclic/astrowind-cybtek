@@ -4,7 +4,7 @@ export const headerData = {
   links: [
       
     {
-      text: '🤖 Assistants virtuels',
+      text: '🤖 Assistants',
       href: getPermalink('/ia/agents'),
     },
     {
