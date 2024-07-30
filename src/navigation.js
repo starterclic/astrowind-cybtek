@@ -2,14 +2,7 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
-    {
-      text: '🏭 Studio IA',
-      href: getPermalink('/ia/studio'),
-    },
-    {
-  text: '🗂️ Projets',
-  href: getPermalink('/projets/projets'),
-    },
+      
     {
       text: '🤖 Assistants virtuels',
       href: getPermalink('/ia/agents'),
