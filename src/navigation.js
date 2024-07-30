@@ -12,7 +12,7 @@ export const headerData = {
       href: getPermalink('/ia/services'),
     },
     {
-      text: '📚 Support 🪄',
+      text: '🪄 Support ',
       href: getPermalink('/support/gpt'),
     },
     {
