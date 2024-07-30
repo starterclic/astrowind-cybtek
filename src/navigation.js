@@ -26,10 +26,7 @@ export const headerData = {
       text: '💵 Tarifs',
       href: getPermalink('/tarifs'),
     },
-    {
-      text: '📞 Contact',
-      href: getPermalink('/contact'),
-    },
+    
   ],
   actions: [{ text: '🪄 Discuter avec Cybot, propulsé par GPT!', href: 'https://cybtek.fr/support', target: '_blank' }],
 };
