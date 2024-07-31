@@ -2,12 +2,19 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
+import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
   title: 'Cybtek - Propulsez votre entreprise avec l'IA sur mesure',
+  ignoreTitleTemplate: true,
 };
 ---
 
@@ -18,70 +25,75 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Démarrez gratuitement',
+        text: 'Révolutionnez votre entreprise',
         href: '/contact',
         target: '_blank',
         icon: 'tabler:rocket',
       },
-      { text: 'Découvrez nos solutions', href: '#features' },
+      { text: 'Découvrez notre expertise', href: '#features' },
     ]}
     image={{ src: '~/assets/images/hero-image.png', alt: 'Cybtek Hero Image' }}
   >
     <Fragment slot="title">
-      Révolutionnez votre entreprise avec <span class="text-accent dark:text-white highlight">l'IA sur mesure</span> de Cybtek
+      Propulsez votre succès avec <span class="hidden xl:inline"></span>
+      <span class="text-accent dark:text-white highlight">l'IA sur mesure</span> de Cybtek
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        Boostez votre efficacité, créez des expériences client uniques et surpassez vos concurrents grâce à nos solutions IA avancées.
+        Transformez votre entreprise grâce à nos solutions IA de pointe. De l'efficacité opérationnelle aux expériences client révolutionnaires, Cybtek est votre partenaire pour l'innovation.
       </span>
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">Cybtek : Votre partenaire IA de confiance.</span>
-      Idéal pour les TPE-PME, Entrepreneurs et Startups ambitieux.
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">Cybtek : L'avenir de votre entreprise commence ici.</span>
+      Idéal pour les TPE-PME visionnaires, les entrepreneurs audacieux et les startups en quête d'excellence.
     </Fragment>
   </Hero>
+
+  <!-- Note Widget ******************* -->
+
+  <Note />
 
   <!-- Features Widget *************** -->
 
   <Features
     id="features"
-    tagline="Avantages exclusifs"
-    title="Pourquoi les leaders choisissent Cybtek ?"
-    subtitle="Découvrez comment nos solutions IA révolutionnaires transforment les entreprises et créent un avantage concurrentiel inégalé."
+    tagline="Avantages Exclusifs"
+    title="Pourquoi Cybtek est votre meilleur allié ?"
+    subtitle="Découvrez comment nos solutions IA de pointe propulsent votre entreprise vers de nouveaux sommets, surpassant toute concurrence."
     items={[
       {
-        title: 'IA sur mesure ultra-performante',
+        title: 'IA Ultra-performante sur Mesure',
         description:
-          'Nos solutions IA personnalisées s'adaptent parfaitement à votre entreprise, offrant des performances inégalées et un ROI exceptionnel.',
+          'Nos solutions IA s'adaptent parfaitement à votre entreprise, offrant des performances inégalées et un ROI exceptionnel qui redéfinit vos standards.',
         icon: 'tabler:rocket',
       },
       {
-        title: 'Support d'experts 24/7',
+        title: 'Support d'Élite 24/7',
         description:
-          'Notre équipe d'élite est à votre disposition jour et nuit pour résoudre instantanément vos problèmes les plus complexes.',
+          'Notre équipe d'experts est à votre disposition jour et nuit, garantissant une résolution instantanée de vos défis les plus complexes.',
         icon: 'tabler:headset',
       },
       {
-        title: 'Déploiement ultra-rapide',
+        title: 'Déploiement Éclair',
         description:
-          "Intégration fluide et rapide grâce à notre technologie Docker de pointe. Soyez opérationnel en un temps record.",
-        icon: 'tabler:rocket',
+          "Intégration fluide et rapide grâce à notre technologie Docker de pointe. Soyez opérationnel en un temps record et devancez vos concurrents.",
+        icon: 'tabler:bolt',
       },
       {
-        title: 'Formation sur mesure',
+        title: 'Formation Transformative',
         description:
-          'Programmes de formation personnalisés pour transformer votre équipe en experts IA et maximiser votre potentiel technologique.',
+          'Nos programmes de formation sur mesure transforment votre équipe en experts IA, maximisant votre potentiel technologique et votre avantage concurrentiel.',
         icon: 'tabler:brain',
       },
       {
-        title: 'Solutions open source leader',
+        title: 'Solutions Open Source de Pointe',
         description:
-          'Bénéficiez des meilleures technologies open source, optimisées et sécurisées par nos experts pour une fiabilité maximale.',
+          'Bénéficiez des meilleures technologies open source, optimisées et sécurisées par nos experts pour une fiabilité et une performance inégalées.',
         icon: 'tabler:lock-open',
       },
       {
-        title: 'Boost SEO garanti',
+        title: 'Boost SEO Stratégique',
         description:
-          "Propulsez votre visibilité en ligne et attirez un flux constant de clients qualifiés grâce à notre expertise SEO de pointe.",
+          "Propulsez votre visibilité en ligne et attirez un flux constant de clients qualifiés grâce à notre expertise SEO avancée et nos stratégies de croissance digitale.",
         icon: 'tabler:chart-arrows-vertical',
       },
     ]}
@@ -93,26 +105,26 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Solutions IA sur mesure',
-        description: `Transformez radicalement votre entreprise avec nos solutions IA ultra-performantes. De l'automatisation intelligente à l'analyse prédictive, nous boostons votre efficacité et votre croissance.`,
+        title: 'Solutions IA Révolutionnaires',
+        description: `Transformez radicalement votre entreprise avec nos solutions IA ultra-performantes. De l'automatisation intelligente à l'analyse prédictive, nous propulsons votre croissance à des niveaux inédits.`,
         icon: 'tabler:wand',
       },
       {
-        title: 'GPTs nouvelle génération',
+        title: 'GPTs Nouvelle Génération',
         description:
-          'Accédez à une puissance conversationnelle inégalée avec notre Clone GPTs amélioré. Créez des expériences client uniques et révolutionnez votre communication.',
+          'Accédez à une puissance conversationnelle inégalée avec notre Clone GPTs amélioré. Créez des expériences client uniques qui redéfinissent les standards de votre industrie.',
         icon: 'tabler:robot',
       },
       {
-        title: 'StartIA : votre accélérateur de projets',
+        title: 'StartIA : Votre Accélérateur de Succès',
         description:
-          "Propulsez vos projets IA complexes avec StartIA. Notre plateforme révolutionnaire simplifie la gestion et l'intégration, pour des résultats rapides et spectaculaires.",
+          "Propulsez vos projets IA complexes avec StartIA. Notre plateforme révolutionnaire simplifie la gestion et l'intégration, pour des résultats rapides et spectaculaires qui dépassent toutes vos attentes.",
         icon: 'tabler:rocket',
       },
       {
-        title: 'Accompagnement d'élite',
+        title: 'Accompagnement Stratégique d'Élite',
         description:
-          'Bénéficiez d'un accompagnement personnalisé par nos experts IA. De l'idéation au déploiement, nous sommes à vos côtés pour garantir votre succès.',
+          'Bénéficiez d'un accompagnement personnalisé par nos experts IA. De l'idéation au déploiement, nous sommes votre partenaire de confiance pour garantir un succès exceptionnel et durable.',
         icon: 'tabler:users',
       },
     ]}
@@ -121,8 +133,10 @@ const metadata = {
       alt: 'Solutions IA Cybtek',
     }}
   >
-    <Fragment slot="content">Cybtek : L'IA qui propulse les leaders de demain</Fragment>
+    <Fragment slot="content">Cybtek : L'IA qui propulse les leaders de demain vers un succès inégalé</Fragment>
   </Content>
+
+  <!-- Content Widget (suite) et autres widgets... -->
 
   <!-- CallToAction Widget *********** -->
 
@@ -130,7 +144,7 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Commencez votre transformation',
+        text: 'Lancez votre transformation maintenant',
         href: '/contact',
         target: '_self',
         icon: 'tabler:rocket',
@@ -138,11 +152,11 @@ const metadata = {
     ]}
   >
     <Fragment slot="title">
-      Prêt à révolutionner votre entreprise ?
+      Prêt à dominer votre marché avec Cybtek ?
     </Fragment>
 
     <Fragment slot="subtitle">
-      Ne laissez pas vos concurrents vous distancer. Rejoignez l'élite des entreprises propulsées par l'IA Cybtek. <br class="hidden md:inline" />Votre succès commence maintenant !
+      Ne laissez pas vos concurrents vous distancer. Rejoignez l'élite des entreprises propulsées par l'IA Cybtek et redéfinissez les règles du jeu. <br class="hidden md:inline" />Votre succès exceptionnel commence maintenant !
     </Fragment>
   </CallToAction>
 </Layout>
