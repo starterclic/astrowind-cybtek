@@ -13,7 +13,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Cybtek - Propulsez votre entreprise avec l'IA sur mesure',
+  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
   ignoreTitleTemplate: true,
 };
 ---
@@ -21,32 +21,33 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Révolutionnez votre entreprise',
-        href: '/contact',
-        target: '_blank',
-        icon: 'tabler:rocket',
-      },
-      { text: 'Découvrez notre expertise', href: '#features' },
-    ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'Cybtek Hero Image' }}
-  >
-    <Fragment slot="title">
-      Propulsez votre succès avec <span class="hidden xl:inline"></span>
-      <span class="text-accent dark:text-white highlight">l'IA sur mesure</span> de Cybtek
-    </Fragment>
+<Hero
+  actions={[
+    {
+      variant: 'primary',
+      text: 'Découvrir les services',
+      href: '/contact',
+      target: '_blank',
+      icon: 'tabler:download',
+    },
+    { text: 'Accéder au support 24/7', href: '#features' },
+  ]}
+  image={{ src: '~/assets/images/hero-image.png', alt: 'Cybtek Hero Image' }}
+>
+  <Fragment slot="title">
+    Propulsez votre entreprise avec <span class="hidden xl:inline"> </span>
+      <span class="text-accent dark:text-white highlight"> l'IA sur mesure</span> de Cybtek
+  </Fragment>
 
-    <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        Transformez votre entreprise grâce à nos solutions IA de pointe. De l'efficacité opérationnelle aux expériences client révolutionnaires, Cybtek est votre partenaire pour l'innovation.
-      </span>
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">Cybtek : L'avenir de votre entreprise commence ici.</span>
-      Idéal pour les TPE-PME visionnaires, les entrepreneurs audacieux et les startups en quête d'excellence.
-    </Fragment>
-  </Hero>
+  <Fragment slot="subtitle">
+    <span class="hidden sm:inline">
+      Des solutions intelligentes adaptées à vos besoins, de l'efficacité opérationnelle aux expériences client innovantes</span
+    >
+    <span class="block mb-1 sm:hidden font-bold text-blue-600">Cybtek : Prêt pour la production.</span>
+    Idéal pour les TPE-PME, Entrepreneurs, Startups, ...
+  </Fragment>
+</Hero>
+
 
   <!-- Note Widget ******************* -->
 
@@ -54,109 +55,348 @@ const metadata = {
 
   <!-- Features Widget *************** -->
 
-  <Features
-    id="features"
-    tagline="Avantages Exclusifs"
-    title="Pourquoi Cybtek est votre meilleur allié ?"
-    subtitle="Découvrez comment nos solutions IA de pointe propulsent votre entreprise vers de nouveaux sommets, surpassant toute concurrence."
+<Features
+  id="features"
+  tagline="Avantages"
+  title="Pourquoi Cybtek ?"
+  subtitle="Les solutions open source parmi les plus professionnelles et complètes actuellement sur le marché. Conçu pour améliorer l'efficacité et la productivité."
+  items={[
+    {
+      title: 'Intégration IA Avancée',
+      description:
+        'Une intégration fluide des technologies IA pour offrir des performances élevées et une grande polyvalence dans vos projets.',
+      icon: 'tabler:device-desktop-analytics',
+    },
+    {
+      title: 'Support Technique de Niveau 3',
+      description:
+        'Support technique avancé disponible 24/7 pour résoudre vos problèmes les plus complexes et garantir la continuité de vos opérations.',
+      icon: 'tabler:tools',
+    },
+    {
+      title: 'Déploiement Docker',
+      description:
+        "Déploiement d'applications dans des conteneurs Docker pour une gestion simplifiée et une meilleure scalabilité.",
+      icon: 'tabler:brand-docker',
+    },
+    {
+      title: 'Formations Personnalisées',
+      description:
+        'Formations sur mesure pour maîtriser les technologies IA et les meilleures pratiques en développement et support technique.',
+      icon: 'tabler:school',
+    },
+    {
+      title: 'Solutions Open Source',
+      description:
+        'Implémentation et support des meilleures solutions open source comme WordPress, Odoo, et bien plus.',
+      icon: 'tabler:brand-open-source',
+    },
+    {
+      title: 'Optimisation pour les Moteurs de Recherche (SEO)',
+      description:
+        "Amélioration de la visibilité de votre site web pour attirer plus de trafic organique et atteindre une audience plus large.",
+      icon: 'tabler:arrows-right-left',
+    },
+  ]}
+/>
+
+  <!-- Content Widget 2 **************** -->
+
+<Content
+  isAfterContent
+  items={[
+    {
+      title: 'Solutions IA Personnalisées',
+      description: `Cybtek offre des solutions IA sur mesure adaptées aux besoins spécifiques de votre entreprise. Que vous souhaitiez améliorer l'efficacité opérationnelle ou créer des expériences client innovantes, nos services sont conçus pour vous aider à atteindre vos objectifs.`,
+      icon: 'tabler:brain',
+    },
+    {
+      title: 'Clone GPTs Amélioré',
+      description:
+        'Accédez à une version améliorée de GPTs avec Cybtek. Profitez d’une interface intuitive et de la possibilité de vous connecter à de nombreux modèles de langage (LLMs) pour des applications diverses et avancées.',
+      icon: 'tabler:robot',
+    },
+    {
+      title: 'StartIA pour Projets Complexes',
+      description:
+        "Pour les projets plus complexes, Cybtek propose StartIA, une solution basée sur Flowise. Cette plateforme permet une gestion et une intégration simplifiées des projets IA complexes, facilitant ainsi le déploiement et la maintenance.",
+      icon: 'tabler:rocket',
+    },
+    {
+      title: 'Support et Accompagnement',
+      description:
+        'Bénéficiez d’un support dédié et d’un accompagnement personnalisé tout au long de vos projets IA. Cybtek est là pour vous guider à chaque étape, depuis l’analyse des besoins jusqu’à la mise en œuvre et au-delà.',
+      icon: 'tabler:lifebuoy',
+    },
+  ]}
+  image={{
+    src: 'https://images.unsplash.com/photo-1508385082359-f17333c6d6de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2187&q=80',
+    alt: 'Image de Solutions IA',
+  }}
+>
+  <Fragment slot="content">Transformez votre entreprise avec les solutions IA avancées de Cybtek.</Fragment>
+
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-gray-50 dark:bg-transparent"></div>
+  </Fragment>
+</Content>
+
+<!-- Content Widget 3 **************** -->
+
+<Content
+  isReversed
+  isAfterContent
+  items={[
+    {
+      title: 'Engagement Utilisateur Amélioré',
+      description:
+        'Captivez votre audience avec des éléments interactifs, une navigation intuitive et des mises en page visuellement attrayantes, encourageant des visites plus longues.',
+      icon: 'tabler:user-check',
+    },
+    {
+      title: 'Amélioration Continue',
+      description:
+        'Assurez-vous que votre site reste aligné avec les dernières tendances et technologies grâce à des mises à jour et des améliorations régulières.',
+      icon: 'tabler:refresh',
+    },
+    {
+      title: 'Efficacité en Temps et Ressources',
+      description:
+        'Évitez le processus chronophage de création de site web de zéro et lancez votre présence en ligne plus rapidement avec les solutions de Cybtek.',
+      icon: 'tabler:clock',
+    },
+    {
+      title: 'Soutien Communautaire',
+      description: `Rejoignez la communauté croissante de Cybtek pour des insights, des ressources et de l’assistance, assurant que vous n’êtes jamais seul dans votre parcours de développement web.`,
+      icon: 'tabler:users',
+    },
+  ]}
+  image={{
+    src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    alt: 'Image d\'Engagement',
+  }}
+>
+  <Fragment slot="content">Conçu pour favoriser la croissance et le succès.</Fragment>
+
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Content>
+
+<!-- Content Widget 4 **************** -->
+
+<Content
+  isAfterContent
+  items={[
+    {
+      title: 'Analyse de Projets IA',
+      description: `Chez Cybtek, nous commençons par une analyse approfondie de vos besoins et objectifs. Nous vous aidons à définir un cahier des charges clair pour vos projets IA, assurant une mise en œuvre efficace et alignée avec vos attentes.`,
+      icon: 'tabler:clipboard-list',
+    },
+    {
+      title: 'Installation & Accompagnement',
+      description:
+        'Nos experts vous accompagnent tout au long du processus d’installation et de déploiement de vos solutions IA. Nous offrons un soutien continu pour garantir que vos systèmes fonctionnent de manière optimale.',
+      icon: 'tabler:tools',
+    },
+    {
+      title: 'Formation et Compétences',
+      description:
+        "Cybtek propose des programmes de formation pour vous et votre équipe afin d'acquérir les compétences nécessaires pour tirer pleinement parti de vos solutions IA. Devenez autonome dans l'utilisation et la gestion de vos outils IA.",
+      icon: 'tabler:school',
+    },
+    {
+      title: 'Services IA Avancés',
+      description:
+        'Explorez nos services IA avancés, incluant l’intégration de solutions d’apprentissage automatique, de traitement du langage naturel, et plus encore. Nous vous aidons à exploiter le plein potentiel de l’IA pour votre entreprise.',
+      icon: 'tabler:chart-line',
+    },
+  ]}
+  image={{
+    src: 'https://images.unsplash.com/photo-1525276120116-0c4d4db7c6d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2100&q=80',
+    alt: 'Image de Services IA Avancés',
+  }}
+>
+  <Fragment slot="content">Optimisez vos processus avec les services IA avancés de Cybtek.</Fragment>
+
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-gray-100 dark:bg-transparent"></div>
+  </Fragment>
+</Content>
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="Lancez votre projet digital avec Cybtek en un rien de temps."
     items={[
       {
-        title: 'IA Ultra-performante sur Mesure',
+        title: 'Étape 1: <span class="font-medium">Analyse des Besoins</span>',
         description:
-          'Nos solutions IA s'adaptent parfaitement à votre entreprise, offrant des performances inégalées et un ROI exceptionnel qui redéfinit vos standards.',
+          "Commencez par une consultation gratuite pour comprendre vos besoins et objectifs. Nous vous aidons à définir une stratégie claire pour votre projet.",
+        icon: 'tabler:package',
+      },
+      {
+        title: 'Étape 2: <span class="font-medium">Ajout de Contenu</span>',
+        description:
+          "Ajoutez votre contenu, y compris des images, des textes et plus encore pour donner vie à votre espace digital. Le contenu est essentiel pour raconter votre histoire.",
+        icon: 'tabler:letter-case',
+      },
+      {
+        title: 'Étape 3: <span class="font-medium">Personnalisation des Styles</span>',
+        description:
+          'Apportez votre touche personnelle. Adaptez les couleurs, les polices et les mises en page jusqu’à ce que tout soit parfait. Votre style unique amplifié par Cybtek !',
+        icon: 'tabler:paint',
+      },
+      {
+        title: 'Prêt!',
+        icon: 'tabler:check',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      alt: 'Image Étapes',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Solutions Clés en Main"
+    subtitle="Découvrez nos solutions prêtes à l'emploi pour optimiser votre entreprise avec l'IA"
+    tagline="Produits"
+    items={[
+      {
+        title: 'Clone GPTs Amélioré',
+        description: "Accédez à notre version avancée de GPTs, offrant une interface intuitive et la possibilité de se connecter à de nombreux modèles de langage pour des applications variées.",
+        icon: 'tabler:robot',
+      },
+      {
+        title: 'StartIA',
+        description: "StartIA, basé sur Flowise, est idéal pour les projets IA complexes. Cette plateforme facilite la gestion et l'intégration des projets IA, de la planification à la mise en œuvre.",
         icon: 'tabler:rocket',
       },
       {
-        title: 'Support d'Élite 24/7',
-        description:
-          'Notre équipe d'experts est à votre disposition jour et nuit, garantissant une résolution instantanée de vos défis les plus complexes.',
-        icon: 'tabler:headset',
+        title: 'Solutions d\'Apprentissage Automatique',
+        description: "Nos solutions d'apprentissage automatique vous permettent de tirer parti des données pour améliorer la prise de décision, automatiser les processus et prédire les tendances futures.",
+        icon: 'tabler:chart-line',
       },
       {
-        title: 'Déploiement Éclair',
-        description:
-          "Intégration fluide et rapide grâce à notre technologie Docker de pointe. Soyez opérationnel en un temps record et devancez vos concurrents.",
-        icon: 'tabler:bolt',
+        title: 'Plateforme de Traitement du Langage Naturel',
+        description: "Optimisez la compréhension et la génération de texte grâce à notre plateforme avancée de traitement du langage naturel, adaptée à diverses applications industrielles.",
+        icon: 'tabler:language',
       },
       {
-        title: 'Formation Transformative',
-        description:
-          'Nos programmes de formation sur mesure transforment votre équipe en experts IA, maximisant votre potentiel technologique et votre avantage concurrentiel.',
-        icon: 'tabler:brain',
+        title: 'Outils d\'Intégration DevOps',
+        description: "Facilitez le développement, le déploiement et la maintenance de vos applications IA avec nos outils DevOps intégrés, assurant une livraison continue et une haute disponibilité.",
+        icon: 'tabler:settings',
       },
       {
-        title: 'Solutions Open Source de Pointe',
-        description:
-          'Bénéficiez des meilleures technologies open source, optimisées et sécurisées par nos experts pour une fiabilité et une performance inégalées.',
-        icon: 'tabler:lock-open',
+        title: 'Systèmes de Sécurité et de Conformité',
+        description: "Assurez la sécurité de vos données avec nos solutions conformes aux normes RGPD, protégeant vos informations sensibles et garantissant la confidentialité.",
+        icon: 'tabler:shield-lock',
       },
       {
-        title: 'Boost SEO Stratégique',
+        title: 'Interface d\'Analyse de Données',
+        description: "Exploitez la puissance de vos données grâce à notre interface d'analyse avancée, offrant des visualisations interactives et des rapports détaillés pour une prise de décision éclairée.",
+        icon: 'tabler:chart-bar',
+      },
+      {
+        title: 'Support et Maintenance Continue',
+        description: "Profitez d'un support technique dédié et d'une maintenance continue pour assurer la performance et la fiabilité de vos solutions IA, minimisant les interruptions.",
+        icon: 'tabler:lifebuoy',
+      },
+      {
+        title: 'Formations et Compétences',
+        description: "Développez les compétences de votre équipe avec nos programmes de formation, assurant une utilisation optimale et une gestion autonome de vos solutions IA.",
+        icon: 'tabler:school',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+  <!-- HighlightedPosts Widget ******* -->
+
+  <BlogLatestPosts
+    title="Découvrez plus de contenu sur notre Blog"
+    information={`Le blog est utilisé pour afficher la documentation de Cybtek.
+                        Chaque nouvel article sera une étape importante que vous devrez connaître pour devenir un expert en intelligence artificielle et support technique.
+                        L'IA est une technologie très intéressante. Merci.
+                `}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Questions Fréquemment Posées"
+    subtitle="Plongez dans les questions suivantes pour découvrir les fonctionnalités puissantes que Cybtek offre et comment elles peuvent améliorer votre parcours de développement web."
+    tagline="FAQs"
+    classes={{ container: 'max-w-6xl' }}
+    items={[
+      {
+        title: 'Pourquoi choisir Cybtek ?',
         description:
-          "Propulsez votre visibilité en ligne et attirez un flux constant de clients qualifiés grâce à notre expertise SEO avancée et nos stratégies de croissance digitale.",
-        icon: 'tabler:chart-arrows-vertical',
+          "Cybtek offre des solutions avancées en intelligence artificielle et support technique, adaptées aux besoins des entreprises modernes. Nous nous engageons à fournir des services de haute qualité pour améliorer votre productivité et efficacité.",
+      },
+      {
+        title: 'De quoi ai-je besoin pour commencer ?',
+        description:
+          'Tout ce dont vous avez besoin est une idée claire de vos besoins et objectifs. Notre équipe vous guidera à travers chaque étape pour vous assurer une mise en place fluide et réussie de nos solutions.',
+      },
+      {
+        title: 'Comment installer les solutions Cybtek ?',
+        description:
+          "L'installation de nos solutions est simple et rapide. Nous fournissons des guides détaillés et notre équipe est disponible pour vous assister tout au long du processus d'installation.",
+      },
+      {
+        title: "Quelles sont les options de support disponibles ?",
+        description:
+          "Nous offrons plusieurs options de support, y compris l'assistance via GPT, les tickets de support technique, et les sessions de visioconférence pour répondre à tous vos besoins.",
+      },
+      {
+        title: 'Quels sont les avantages des solutions Cybtek ?',
+        description:
+          "Nos solutions offrent une intégration avancée de l'IA, une personnalisation élevée, et une assistance technique de pointe pour assurer que votre entreprise reste à la pointe de la technologie.",
+      },
+      {
+        title: 'Comment puis-je contribuer à Cybtek ?',
+        description:
+          "Nous encourageons les contributions de la communauté. Rejoignez-nous pour partager vos idées et aider à améliorer nos solutions. Ensemble, nous pouvons faire avancer la technologie.",
       },
     ]}
   />
 
-  <!-- Content Widget **************** -->
+  <!-- Stats Widget ****************** -->
 
-  <Content
-    isAfterContent
-    items={[
-      {
-        title: 'Solutions IA Révolutionnaires',
-        description: `Transformez radicalement votre entreprise avec nos solutions IA ultra-performantes. De l'automatisation intelligente à l'analyse prédictive, nous propulsons votre croissance à des niveaux inédits.`,
-        icon: 'tabler:wand',
-      },
-      {
-        title: 'GPTs Nouvelle Génération',
-        description:
-          'Accédez à une puissance conversationnelle inégalée avec notre Clone GPTs amélioré. Créez des expériences client uniques qui redéfinissent les standards de votre industrie.',
-        icon: 'tabler:robot',
-      },
-      {
-        title: 'StartIA : Votre Accélérateur de Succès',
-        description:
-          "Propulsez vos projets IA complexes avec StartIA. Notre plateforme révolutionnaire simplifie la gestion et l'intégration, pour des résultats rapides et spectaculaires qui dépassent toutes vos attentes.",
-        icon: 'tabler:rocket',
-      },
-      {
-        title: 'Accompagnement Stratégique d'Élite',
-        description:
-          'Bénéficiez d'un accompagnement personnalisé par nos experts IA. De l'idéation au déploiement, nous sommes votre partenaire de confiance pour garantir un succès exceptionnel et durable.',
-        icon: 'tabler:users',
-      },
+  <Stats
+    stats={[
+      { title: 'Clients Satisfaits', amount: '132' },
+      { title: 'Projets Réussis', amount: '248' },
+      { title: 'Applications Déployées', amount: '103' },
+      { title: 'Heures de Support', amount: '484' },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1508385082359-f17333c6d6de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2187&q=80',
-      alt: 'Solutions IA Cybtek',
-    }}
-  >
-    <Fragment slot="content">Cybtek : L'IA qui propulse les leaders de demain vers un succès inégalé</Fragment>
-  </Content>
+  />
 
-  <!-- Content Widget (suite) et autres widgets... -->
-
-  <!-- CallToAction Widget *********** -->
 
   <CallToAction
     actions={[
       {
         variant: 'primary',
-        text: 'Lancez votre transformation maintenant',
+        text: 'Contactez-nous',
         href: '/contact',
         target: '_self',
-        icon: 'tabler:rocket',
+        icon: 'tabler:download',
       },
     ]}
   >
     <Fragment slot="title">
-      Prêt à dominer votre marché avec Cybtek ?
+      Cybtek&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">IA et Support Technique</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Ne laissez pas vos concurrents vous distancer. Rejoignez l'élite des entreprises propulsées par l'IA Cybtek et redéfinissez les règles du jeu. <br class="hidden md:inline" />Votre succès exceptionnel commence maintenant !
+      Soyez très surpris par les nombreux avantages que nous offrons. <br class="hidden md:inline" />Ne perdez plus de temps !
     </Fragment>
   </CallToAction>
 </Layout>
