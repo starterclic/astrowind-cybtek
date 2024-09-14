@@ -33,18 +33,18 @@ const metadata = {
     ]}
     image={{ src: '~/assets/images/hero-image.png', alt: 'Cybtek Hero Image' }}
   >
-    <Fragment slot="title">
+    <h1 slot="title">
       Propulsez votre entreprise avec <span class="hidden xl:inline"> </span>
       <span class="text-accent dark:text-white highlight"> l'IA sur mesure</span> de Cybtek
-    </Fragment>
+    </h1>
 
-    <Fragment slot="subtitle">
+    <p slot="subtitle">
       <span class="hidden sm:inline">
         Des solutions intelligentes adaptées à vos besoins, de l'efficacité opérationnelle aux expériences client innovantes.
       </span>
       <span class="block mb-1 sm:hidden font-bold text-blue-600">Cybtek : Prêt pour la production.</span>
       Idéal pour les TPE-PME, Entrepreneurs, Startups, ...
-    </Fragment>
+    </p>
   </Hero>
 
   <!-- Note Widget ******************* -->
@@ -120,11 +120,9 @@ const metadata = {
       alt: 'Image de Solutions IA',
     }}
   >
-    <Fragment slot="content">Transformez votre entreprise avec les solutions IA avancées de Cybtek.</Fragment>
+    <p slot="content">Transformez votre entreprise avec les solutions IA avancées de Cybtek.</p>
 
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-gray-50 dark:bg-transparent"></div>
-    </Fragment>
+    <div slot="bg" class="absolute inset-0 bg-gray-50 dark:bg-transparent"></div>
   </Content>
 
   <!-- Content Widget 3 **************** -->
@@ -158,11 +156,9 @@ const metadata = {
       alt: 'Image d\'Engagement',
     }}
   >
-    <Fragment slot="content">Conçu pour favoriser la croissance et le succès.</Fragment>
+    <p slot="content">Conçu pour favoriser la croissance et le succès.</p>
 
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
+    <div slot="bg" class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
   </Content>
 
   <!-- Content Widget 4 **************** -->
@@ -195,11 +191,9 @@ const metadata = {
       alt: 'Image de Services IA Avancés',
     }}
   >
-    <Fragment slot="content">Optimisez vos processus avec les services IA avancés de Cybtek.</Fragment>
+    <p slot="content">Optimisez vos processus avec les services IA avancés de Cybtek.</p>
 
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-gray-100 dark:bg-transparent"></div>
-    </Fragment>
+    <div slot="bg" class="absolute inset-0 bg-gray-100 dark:bg-transparent"></div>
   </Content>
 
   <!-- Steps Widget ****************** -->
@@ -244,8 +238,8 @@ const metadata = {
     actions={[{ text: 'Contactez-nous', href: '/contact', target: '_blank' }]}
     image={{ src: 'https://images.unsplash.com/photo-1508138221679-760a23a2285b?auto=format&fit=crop&w=2250&q=80', alt: 'Cybtek' }}
   >
-    <Fragment slot="title">
+    <h2 slot="title">
       Des agents <span class="sm:whitespace-nowrap">IA et Support Technique</span> sur mesure pour booster votre productivité.
-    </Fragment>
+    </h2>
   </CallToAction>
 </Layout>
