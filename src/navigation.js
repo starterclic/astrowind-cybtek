@@ -17,7 +17,7 @@ export const headerData = {
     },
     {
       text: 'Tarifs',
-      href: getPermalink('/tarifs'),
+      href: getPermalink('/pricing'),
     },
     
   ],
