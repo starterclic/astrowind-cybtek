@@ -16,7 +16,7 @@ export const headerData = {
       href: getPermalink('/support/gpt'),
     },
     {
-      text: 'Tarifs',
+      text: 'Pricing',
       href: getPermalink('/pricing'),
     },
     
